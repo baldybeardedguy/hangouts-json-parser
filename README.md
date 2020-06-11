@@ -4,8 +4,11 @@ Here are two scripts, one for Mac/Linux using Python3 and another for Windows Po
 
 # Windows Powershell script run from cmdline:
 Use File Explorer and browse to the location where you stored the Hangouts.ps1 file (Example: C:\Temp)
+
     Then use Menu: File -> Open Windows PowerShell
+
 Once window opens and you get the prompt (Example: PS C:\Temp)
+
 Make sure your json file and ps1 files are both listed
 PS C:\Temp> dir
 
