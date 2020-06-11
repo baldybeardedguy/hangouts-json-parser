@@ -4,11 +4,8 @@ Here are two scripts, one for Mac/Linux using Python3 and another for Windows Po
 
 # Windows Powershell script run from cmdline:
 Use File Explorer and browse to the location where you stored the Hangouts.ps1 file (Example: C:\Temp)
-
-    Then use Menu: File -> Open Windows PowerShell
-
+Then use Menu: File -> Open Windows PowerShell
 Once window opens and you get the prompt (Example: PS C:\Temp)
-
 Make sure your json file and ps1 files are both listed
 PS C:\Temp> dir
 
@@ -21,10 +18,12 @@ Mode                LastWriteTime     Length Name
 
 Run it:
 PS C:\Temp> .\Hangouts.ps1 Hangouts.json > Hangouts.txt
-   tip: to see what it is doing, use the following command: .\Hangouts.ps1 Hangouts.json | Tee-Object -file Hangouts.txt
-        this can add some time to the processing, 10 minutes instead of 4 minutes for my json file
-Press ENTER to execute the script. (can take a while. Mine took 4 minutes)
 
+To see what output as it parses, use the following command: 
+    .\Hangouts.ps1 Hangouts.json | Tee-Object -file Hangouts.txt
+This can add some time to the processing, 10 minutes instead of 4 minutes for my json file
+     
+Press ENTER to execute the script. (can take a while. Mine took 4 minutes)
 Once done:
 PS C:\Temp> dir
 
