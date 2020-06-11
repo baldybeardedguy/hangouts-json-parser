@@ -13,7 +13,7 @@ Make sure your json file and ps1 files are both in the same location
 
 Run it:
 
-PS C:\Temp> .\Hangouts.ps1 Hangouts.json > Hangouts.txt
+ PS C:\Temp> .\Hangouts.ps1 Hangouts.json > Hangouts.txt
 
 To see what output as it parses, use the following command: 
 
