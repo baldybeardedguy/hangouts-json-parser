@@ -2,6 +2,8 @@ Use Google Takeout to download your classic Hangouts conversations.
 
 Here are two scripts, one for Mac/Linux using Python3 and another for Windows Powershell.
 
+the scripts run on your local computer, nothing is uploaded or shared with anyone else
+
 # Windows Powershell script run from cmdline:
 ```
 Use File Explorer and browse to the location where you stored the Hangouts.ps1 file (Example: C:\Temp)
