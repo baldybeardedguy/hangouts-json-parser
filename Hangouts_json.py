@@ -1,4 +1,4 @@
-# use the JSON module
+#Python3 JSON parser
 #cd /tmp
 #python3 hangouts_json.py -i Takeout/Hangouts/Hangouts.json
 # OR
