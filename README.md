@@ -3,54 +3,36 @@ Use Google Takeout to download your classic Hangouts conversations.
 Here are two scripts, one for Mac/Linux using Python3 and another for Windows Powershell.
 
 # Windows Powershell script run from cmdline:
-Use File Explorer and browse to the location where you stored the Hangouts.ps1 file (Example: C:\Temp)
-
+`Use File Explorer and browse to the location where you stored the Hangouts.ps1 file (Example: C:\Temp)
 Then use Menu: File -> Open Windows PowerShell
-
 Once window opens and you get the prompt (Example: PS C:\Temp)
-
 Make sure your json file and ps1 files are both in the same location
-
 Run it:
-
  PS C:\Temp> .\Hangouts.ps1 Hangouts.json > Hangouts.txt
-
-To see what output as it parses, use the following command: 
-
-    .\Hangouts.ps1 Hangouts.json | Tee-Object -file Hangouts.txt
-    
+ 
+Option: To see output as it parses, use the following command: 
+ PS C:\Temp> .\Hangouts.ps1 Hangouts.json | Tee-Object -file Hangouts.txt
 This can add some time to the processing, 10 minutes instead of 4 minutes for my json file
      
 Press ENTER to execute the script. (can take a while. Mine took 4 minutes)
-
 Once done you will have a Hangouts.txt file with the output.
-
+`
 # Python3
+`
 Make sure Python3 is in your PATH env
-
 Example using /tmp as location where you stored the hangouts_json.py file
-
 Copy your downloaded Takeout files to here and uncompress to Takeout/Hangouts/
-
 cd /tmp
-
 cp ~/Downloads/Takeout.zip /tmp
-
 unzip Takeout.zip
-
 Run it (defaults parsed file to current folder and Hangouts.txt as name)
-
 python3 hangouts_json.py -i Takeout/Hangouts/Hangouts.json
-
  OR specify parsed file name location:
- 
 python3 hangouts_json.py -i Takeout/Hangouts/Hangouts.json -o Takeout/Hangouts/Hangouts.txt
-
 Your messages should now all be copied to Hangouts.txt
-
-
+`
 # Example output
-
+`
 Conversations
 *These are your hangouts
 *Each conversation has a unique conversation id, that can be used to search the raw json file for the specific conversation
@@ -151,4 +133,4 @@ Participant Name  - Jane Doe  - Hangouts user
  
    Conversation ID -  Vxgie7Ds-AzTxrZypgv0AaQZXY  had  9  message events
  
-
+`
